@@ -1,0 +1,40 @@
+image: php:8.0
+
+stages:
+ - phpunit
+ 
+# Select an image which we should check
+cache:
+  paths:
+  - vendor/
+
+before_script:
+# Install git, the php image doesn't have installed
+- apt-get update -yqq
+- apt-get install git -yqq
+
+# Install mysql driver
+- docker-php-ext-install pdo_mysql
+# Install composer
+- curl -sS https://getcomposer.org/installer | php
+# Install all project dependencies
+- php composer.phar install
+
+test:phpunit-php7:  
+  image: php:7.6
+  script:
+  - vendor/bin/phpunit
+  allow_failure: false
+
+test:phpunit-php8:  
+  image: php:8.0
+  script:
+  - vendor/bin/phpunit
+  allow_failure: false
+
+test:phpstan:  
+  image: php:8.0
+  script:
+  - vendor/bin/phpstan analyse vendor/bin/phpstan analyse src test --error-format=gitlab
+  allow_failure: true
+
