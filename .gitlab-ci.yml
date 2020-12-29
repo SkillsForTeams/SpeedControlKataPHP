@@ -1,7 +1,8 @@
 image: php:8.0
 
 stages:
- - phpunit
+ - test
+ - code-analysis
  
 # Select an image which we should check
 cache:
@@ -32,7 +33,7 @@ test:phpunit-php8:
   - vendor/bin/phpunit
   allow_failure: false
 
-test:phpstan:  
+code-analysis:phpstan:  
   image: php:8.0
   script:
   - vendor/bin/phpstan analyse vendor/bin/phpstan analyse src test --error-format=gitlab
