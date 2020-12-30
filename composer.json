@@ -1,0 +1,23 @@
+{
+    "name": "skillsforteams/speedcontrolkataphp",
+    "description": "Speed Control Kata for PHP",
+    "authors": [
+        {
+            "name": "John Behrens",
+            "email": "john.behrens@skills-for-teams.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SpeedControlKata\\": "src/",
+            "SpeedControlKata\\Tests\\": "tests/"
+        }
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12.64"
+    },
+   
+    "require": {}
+}
