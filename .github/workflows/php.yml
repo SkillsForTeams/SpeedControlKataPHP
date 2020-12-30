@@ -16,38 +16,33 @@ jobs:
     - name: Setup PHP with PECL extension
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '7.4'
-        extensions: imagick, swoole 
+        php-version: '8.0'        
           
     - uses: actions/checkout@v2
 
-    - name: Validate composer.json and composer.lock
-      working-directory: ./php
+    - name: Validate composer.json and composer.lock      
       run: composer validate
   
     - name: Cache Composer packages   
       id: composer-cache
       uses: actions/cache@v2
       with:            
-        path: php/vendor
+        path: vendor
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
     
     - name: Composer Install
-      if: steps.composer-cache.outputs.cache-hit != 'true'      
-      working-directory: ./php
+      if: steps.composer-cache.outputs.cache-hit != 'true'            
       run: composer install --prefer-dist --no-progress --no-suggest
   
  
     #PHPStan Static Code Analysis 
-    - name: PHPStan
-      working-directory: ./php
+    - name: PHPStan      
       continue-on-error: true
       run: vendor/bin/phpstan analyse --ansi   
       
     #Run PHPUnit Tests 
-    - name: PHPUnit Tests
-      working-directory: ./php
+    - name: PHPUnit Tests      
       continue-on-error: false
       run: ./vendor/bin/phpunit
