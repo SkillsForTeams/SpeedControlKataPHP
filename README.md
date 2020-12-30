@@ -39,13 +39,10 @@ Zulässige Höchstgeschwindigkeit überschritten mit anderen Kraftfahrzeugen
 BKat-Nr. *)	Delikt	                                             Punkte EURO Fahrverbot
 11.3.4	21 - 25 km/h  -  innerhalb geschlossener Ortschaften	1 P	A	80	nein
 11.3.4	21 - 25 km/h  -  außerhalb geschlossener Ortschaften	1 P	A	70	nein
-11.3.5	26 - 30 km/h   -  innerhalb geschlossener Ortschaften	1 P	A	100	nein;
-ja ***)
-11.3.5	26 - 30 km/h   -  außerhalb geschlossener Ortschaften	1 P	A	80	nein;
-ja ***)
+11.3.5	26 - 30 km/h   -  innerhalb geschlossener Ortschaften	1 P	A	100	nein / ja ***)
+11.3.5	26 - 30 km/h   -  außerhalb geschlossener Ortschaften	1 P	A	80	nein / ja ***)
 11.3.6	31 - 40 km/h   -  innerhalb geschlossener Ortschaften	2 P	A	160	ja
-11.3.6	31 - 40 km/h   -  außerhalb geschlossener Ortschaften	1 P	A	120	nein;
-ja ***)
+11.3.6	31 - 40 km/h   -  außerhalb geschlossener Ortschaften	1 P	A	120	nein / ja ***)
 11.3.7	41 - 50 km/h   -  innerhalb geschlossener Ortschaften	2 P	A	200	ja
 11.3.7	41 - 50 km/h   -  außerhalb geschlossener Ortschaften	2 P	A	160	ja
 11.3.8	51 - 60 km/h   -  innerhalb geschlossener Ortschaften	2 P	A	280	ja
