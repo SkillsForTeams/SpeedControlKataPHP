@@ -1,0 +1,26 @@
+# PHPSTan config file default for php version 8
+includes:
+  - vendor/phpstan/phpstan-phpunit/extension.neon
+  - vendor/phpstan/phpstan-phpunit/rules.neon
+  
+parameters:
+  level: 3
+  paths:
+    - src
+  excludes_analyse:
+    - vendor  
+  ignoreErrors:
+      - '#Attribute class PHP8Burger\\ClassAttribute does not exist\.$#'
+      - '#Attribute class [a-zA-Z0-9\\_]+ does not exist\.$#'
+
+      # Optional Parameter after required is deprecated but obsolete cause of named parametes anyhow      
+      #- '#Deprecated in PHP 8.0: Required parameter \$salad follows optional parameter \$meatType\.$#' 
+      #- '#Required parameter \$salad follows optional parameter \$meatType$#'
+      
+      # should be allowed in php8 as it is language feature 
+      #- '#Missing parameter \$meatType \(string\) in call to PHP8Burger\\Burger constructor\.$#'
+
+     
+  reportUnmatchedIgnoredErrors: true
+  checkMissingIterableValueType: false
+  checkGenericClassInNonGenericObjectType: false

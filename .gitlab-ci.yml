@@ -22,7 +22,7 @@ before_script:
 - php composer.phar install
 
 test:phpunit-php7:  
-  image: php:7.6
+  image: php:7.4
   script:
   - vendor/bin/phpunit
   allow_failure: false
