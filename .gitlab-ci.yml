@@ -36,6 +36,6 @@ test:phpunit-php8:
 code-analysis:phpstan:  
   image: php:8.0
   script:
-  - vendor/bin/phpstan analyse vendor/bin/phpstan analyse src test --error-format=gitlab
+  - vendor/bin/phpstan analyse -c phpstan.neon --error-format=gitlab
   allow_failure: true
 
