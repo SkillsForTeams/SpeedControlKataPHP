@@ -1,0 +1,96 @@
+{
+  "0": {
+    "oftempo": "0",
+    "totempo": "10",
+    "insideplacepoint": "0",
+    "outsideplacepoint": "0",
+    "insideplace_drivingban_monat": "0",
+    "outsideplace_drivingban_monat": "0",
+    "insideplace_price": "10",
+    "outsideplace_price": "15"
+  },
+  "1": {
+    "oftempo": "11",
+    "totempo": "15",
+    "insideplacepoint": "0",
+    "outsideplacepoint": "0",
+    "insideplace_drivingban_monat": "0",
+    "outsideplace_drivingban_monat": "0",
+    "insideplace_price": "35",
+    "outsideplace_price": "30"
+  },
+  "2": {
+    "oftempo": "21",
+    "totempo": "25",
+    "insideplacepoint": "1",
+    "outsideplacepoint": "1",
+    "insideplace_drivingban_monat": "0",
+    "outsideplace_drivingban_monat": "0",
+    "insideplace_price": "80",
+    "outsideplace_price": "70"
+  },
+  "3": {
+    "oftempo": "26",
+    "totempo": "30",
+    "insideplacepoint": "1",
+    "outsideplacepoint": "1",
+    "insideplace_drivingban_monat": "1",
+    "outsideplace_drivingban_monat": "1",
+    "insideplace_price": "100",
+    "outsideplace_price": "80"
+  },
+
+  "4": {
+    "oftempo": "31",
+    "totempo": "40",
+    "insideplacepoint": "2",
+    "outsideplacepoint": "2",
+    "insideplace_drivingban_monat": "1",
+    "outsideplace_drivingban_monat": "1",
+    "insideplace_price": "160",
+    "outsideplace_price": "120"
+  },
+  "5": {
+    "oftempo": "41",
+    "totempo": "50",
+    "insideplacepoint": "2",
+    "outsideplacepoint": "2",
+    "insideplace_drivingban_monat": "1",
+    "outsideplace_drivingban_monat": "1",
+    "insideplace_price": "200",
+    "outsideplace_price": "160"
+  },
+
+  "6": {
+    "oftempo": "51",
+    "totempo": "60",
+    "insideplacepoint": "2",
+    "outsideplacepoint": "2",
+    "insideplace_drivingban_monat": "2",
+    "outsideplace_drivingban_monat": "2",
+    "insideplace_price": "280",
+    "outsideplace_price": "240"
+  },
+
+  "7": {
+    "oftempo": "61",
+    "totempo": "70",
+    "insideplacepoint": "2",
+    "outsideplacepoint": "2",
+    "insideplace_drivingban_monat": "3",
+    "outsideplace_drivingban_monat": "3",
+    "insideplace_price": "480",
+    "outsideplace_price": "440"
+  },
+
+  "8": {
+    "oftempo": "70",
+    "totempo": "00",
+    "insideplacepoint": "2",
+    "outsideplacepoint": "2",
+    "insideplace_drivingban_monat": "3",
+    "outsideplace_drivingban_monat": "3",
+    "insideplace_price": "680",
+    "outsideplace_price": "600"
+  }
+}
