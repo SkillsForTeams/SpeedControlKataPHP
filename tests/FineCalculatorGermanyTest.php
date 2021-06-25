@@ -15,7 +15,7 @@ class FineCalculatorGermanyTest extends TestCase {
     }
     /**
      * $feedback ist das der richtige weg ?c
-     *
+     * $fine wird doch überschrieben ? hat es überhaupt eine function
      */
     public function testmaxKmh() {
         $feedback = 'ist ein test';
